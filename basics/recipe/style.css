@@ -13,7 +13,16 @@ h3 {
   color: #295a80;
 }
 
+a {
+  color: #1c4467;
+}
+
+a:visited {
+  color: #295a80;
+}
+
 body {
+  background: #cdc;
   width: 75em;
   font: 1.3em 'Arial', Sans-Serif;
   margin-left: auto;
@@ -22,10 +31,12 @@ body {
 }
 
 #body-wrapper {
+  background: #fff;
   display: flex;
   flex: 1;
   flex-direction: column;
   margin-left: .3em;
+  border: solid #1c4467 .2em;
 }
 
 #grid-row {
@@ -33,10 +44,12 @@ body {
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0 .3em 0 .3em;
 }
 
 #content-row1 {
   flex: 2 1 15em;
+  padding-right: 5em;
 }
 
 #content-row2 {
@@ -44,8 +57,8 @@ body {
 }
 
 #title {
-  position: block;
-  width: 25em;
+  display: block;
+  width: 100%;
   text-align: center;
   background: #fff;
 }
@@ -62,6 +75,7 @@ body {
 }
 
 #steps li {
+  list-style-position: inside;
   counter-increment: prepcount;
 }
 
