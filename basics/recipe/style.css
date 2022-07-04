@@ -1,0 +1,81 @@
+h1 {
+  font: 3em 'Times New Roman', Serif;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin-top: 0;
+  color: #1c4467;
+}
+
+h3 {
+  font: 1.6em 'Times New Roman', Serif;
+  text-align: left;
+  text-decoration: underline;
+  color: #295a80;
+}
+
+body {
+  width: 75em;
+  font: 1.3em 'Arial', Sans-Serif;
+  margin-left: auto;
+  margin-right: auto;
+  color: #077f3b;
+}
+
+#body-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: .3em;
+}
+
+#grid-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#content-row1 {
+  flex: 2 1 15em;
+}
+
+#content-row2 {
+  flex: 1 1 20em;
+}
+
+#title {
+  position: block;
+  width: 25em;
+  text-align: center;
+  background: #fff;
+}
+
+#dish-image {
+  width: 25em;
+  float: left;
+  height: auto;
+  margin-right: .2em;
+}
+
+#steps ol {
+  counter-reset: prepcount 1;
+}
+
+#steps li {
+  counter-increment: prepcount;
+}
+
+#steps li::marker {
+  content: "Step " counter(prepcount) ". ";
+}
+
+/* Reset recipe title to the top, h3 has built in margins */
+#recipe h3 {
+  margin-top: -.2em;
+}
+
+#recipe ol sub {
+  display: block;
+  text-indent: 5em;
+  font-size: .65em;
+}
